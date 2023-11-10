@@ -1,0 +1,78 @@
+body, html {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden; /* This prevents scrolling */
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--primaryColor);
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.7);
+    z-index: 9998;
+    backdrop-filter: blur(5px);
+
+    .simple-loader {
+        border: 16px solid #f3f3f3; // increase the border size
+        border-top: 16px solid #3498db;
+        border-radius: 50%;
+        width: 100px;  // increase the width
+        height: 100px; // increase the height
+        animation: spin 2s linear infinite;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;  // ensure loader is above the overlay
+    }
+
+    .progress-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        color: #333;
+    }
+
+}
+
+
+  
+  #outerbox {
+    align-items: center;
+    display: flex;
+    padding: 3% 5% 0% 5%;
+    width: 80%;
+    margin: 0 auto;
+  
+    
+    .main-div {
+      // height: 50vh;
+      display: flex;
+      align-items: center;
+      padding: 2em;
+      overflow: hidden; /* You can remove this line */
+      border: 1px solid #ccc;
+      border-radius: 20px;
+  
+      .productinfo {
+        padding-top: 2rem;
+        h4 {
+          padding-left: 1rem;
+        }
+        ul {
+          li {
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,125 @@
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-button   {
+  width: 5%; /* Adjust the width as needed */
+  background-color: var(--blackBg);
+  color: var(--white);
+  padding: 5px;
+  border: 1px solid var(--blackBg);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.back-button:hover {
+  background-color: #e0e0e0;
+}
+.graphs-button:hover {
+background-color: #e0e0e0;
+}
+.graphs-button {
+  width: 5%; /* Adjust the width as needed */
+  background-color: #FFA602;
+  color: var(--blackBg  );
+  padding: 5px;
+  border: 1px solid var(--blackBg);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.scrollable-grid {
+  height: 699px; /* Adjust the height as needed */
+  overflow: auto;
+}
+
+
+.table-container {
+  height: 600px; /* Set the desired height for the container */
+  overflow: auto; /* Add a vertical scrollbar if the table content overflows the container */
+
+  /* Control the table width */
+  width: 100%; /* Make the table as wide as the container */
+}
+
+// .grid {
+//   padding: 20px;
+//   border: 1px solid #e0e0e0;
+//   margin-top: 10px;
+// }
+
+
+  /* Overall tab group styling */
+// mat-tab-group {
+//   font-family: 'Roboto', sans-serif; // Use a font of your choice
+//   background-color: #f5f5f5;  
+//         // Example background color
+// }
+
+/* Active tab styling */
+// .mat-tab-label.mat-tab-label-active {
+//   background-color: #ffc400;        // Active tab background color
+//   color: #ffffff;                   // Active tab text color
+//   font-weight: bold;                // Active tab font weight
+//   border-radius: 10px 10px 0 0;    // Example border-radius
+// }
+
+// /* Inactive tab styling */
+// /* Style tab labels */
+// .mat-tab-label {
+// background-color: black; /* Replace 'black' with your desired background color */
+// color: white; /* Replace 'white' with your desired text color */
+// font-weight: bold; /* Optionally set font-weight to bold */
+// }
+
+// /* Style the tab content */
+// .mat-tab-body {
+// background-color: black; /* Replace 'black' with your desired background color */
+// color: white; /* Replace 'white' with your desired text color */
+// padding: 20px; /* Adjust padding as needed */
+// border: 1px solid #e0e0e0; /* Optionally add a border */
+// }
+
+
+
+
+
+.grid {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    margin-top: 10px;
+  }
+    
+  
+  /* Overall tab group styling */
+mat-tab-group {
+  font-family: 'Roboto', sans-serif; // Use a font of your choice
+  background-color: #f5f5f5;        // Example background color
+}
+
+/* Active tab styling */
+.mat-tab-label.mat-tab-label-active {
+  background-color: #ffc400;        // Active tab background color
+  color: #ffffff;                   // Active tab text color
+  font-weight: bold;                // Active tab font weight
+  border-radius: 10px 10px 0 0;    // Example border-radius
+}
+
+/* Inactive tab styling */
+.mat-tab-label {
+  color: #faf6f6;                   // Inactive tab text color
+  padding: 10px 15px;               // Padding
+  transition: all 0.3s;             // Transition effect
+  &:hover {
+      background-color: #d4e6f1;   // Hover effect
+  }
+}
+
+/* Tab content styles */
+.mat-tab-body-content {
+  padding: 20px;                    // Content padding
+}

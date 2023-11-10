@@ -1,0 +1,7 @@
+/* dash-embed.component.scss */
+
+iframe {
+  border: none; /* Remove iframe border */
+  width: 100%; /* Make iframe responsive to its container */
+  height: 100%; /* Set iframe height to 100% to fit its container */
+}

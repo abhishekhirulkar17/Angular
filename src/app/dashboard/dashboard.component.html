@@ -1,0 +1,129 @@
+<style>
+    h4 {
+        font-size: 16px;   /* Adjust font size as needed */
+        text-align: right; /* Aligns text to the right */
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+</style>
+<my-sidebar [isExpanded]="sidebarExpanded" (toggleSidebar)="sidebarExpanded = !sidebarExpanded"></my-sidebar>
+
+    <!-- <div *ngIf="isLoading" style="position:fixed;top:70%;left:50%;transform:translate(-50%, -50%);z-index:9999;width:100px;height:100px;border:10px solid #f3f3f3;border-top:10px solid #db9834;border-radius:50%;animation:spin 2s linear infinite;"></div> -->
+
+
+<div class="content" [ngClass]="{ 'sidebarExpanded': sidebarExpanded }">
+    <router-outlet>
+        <div class="container-fulid">
+            <div class="row header">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <!-- <input type="text" placeholder="Search here"> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 header-right">
+                    <div class="col-md-5"></div>
+                    <div class="col-md-7 userprofilename" style="float: right;">
+                        <div class="col-md-4" style="float: left; text-align: right;">
+                            <img src="assets/img/writericon.png" style="height: 50px; margin-right: 10px;">
+                        </div>
+                        <div class="col-md-8" style="float: left; text-align: left;">
+                            <h5 style="margin-bottom: 0px;">CFO Writer</h5>
+                            <span style="opacity:0.3; font-size: 14px; margin-left: 4px;">Admin</span>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="isLoading" class="overlay">
+                <div class="simple-loader" [style.animation]="isLoading ? 'spin 2s linear infinite' : 'none'"></div>
+                <!-- <div class="progress-text">{{ loadingProgress }}%</div> -->
+             </div>
+            
+            <!--Content Area Start-->
+         <!-- ... Previous HTML code ... -->
+
+<div class="row">
+    <div class="col-md-6">
+        <h3 class="title">Get GST Data</h3>
+    </div>
+    <div class="col-md-6 text-right">
+        <h4>GST Reconciliation : {{ getCurrentMonth() }} 2023</h4>
+    </div>
+    
+</div>
+
+<!-- ... Remaining HTML code ... -->
+
+            <div class="row dashboardcard">
+                <div class="col-md-12">
+                    <div class="row">   
+                        <div class="col-md-4 innercardbig">
+                            <span class="cardtoprighticon"><i class="ri-checkbox-circle-fill"></i></span>
+                            <div class="row">
+                                <div class="col-md-12 img">
+                                    <img class="icon" src="assets/img/gsticon.png">
+                                </div>
+                                <div class="col-md-12 cardinnertitle">
+                                    <h3>2B Downloaded</h3>
+                                </div>
+                                <div class="col-md-12 cardinnertitlecaption">
+                                    <p>Documents downloaded from GSTN as part of GSTR-2B</p>
+                                </div>
+                                <div class="col-md-12 cardinnerbutton">
+                                    <!-- <button class="primarybtn" (click)="load('/gstr2b')">Download 2B From GSTN</button> -->
+                                   
+                                    
+                                    <button class="primarybtn" (click)="Clickdownload2B()">Download 2B From GSTN</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 innercardbig">
+                            <span class="cardtoprighticon"><i class="ri-checkbox-circle-fill"></i></span>
+                            <div class="row">
+                                <div class="col-md-12 img">
+                                    <img class="icon" src="assets/img/writericon.png">
+                                </div>
+                                <div class="col-md-12 cardinnertitle">
+                                    <h3>Import Purchases</h3>
+                                </div>
+                                <div class="col-md-12 cardinnertitlecaption">
+                                    <p>Purchase documents import through writer</p>
+                                </div>
+                                <div class="col-md-12 cardinnerbutton">
+
+                                    <!-- <button class="primarybtn" (click)="load('/gstrpr')">Import Purchase Docs</button> -->
+                                    <button class="primarybtn" (click)="onButtonClick()">Import Purchase Docs</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 innercardbig">
+                            <span class="cardtoprighticon"><i class="ri-refresh-fill"></i></span>
+                            <div class="row">
+                                <div class="col-md-12 img">
+                                    <img class="icon" src="assets/img/dataicon.png">
+                                </div>
+                                <div class="col-md-12 cardinnertitle">
+                                    <h3>Data Summary</h3>
+                                </div>
+                                <div class="col-md-12 cardinnertitlecaption">
+                                    <div class="row">
+                                        <div class="col-md-6"><p>2B Downloaded - <span>2760</span></p></div>
+                                        <div class="col-md-6"><p>My Purchases - <span>2760</span></p></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 cardinnerbutton">
+                                    <button class="highlightbtn" (click)="ClickstartReconciliation()">Start Reconciliation</button>
+                                </div>
+                                <!-- <div *ngIf="showCustomButton">
+                                    <button class="highlightbtn" (click)="showGraphs()">Graphs</button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </router-outlet>

@@ -1,0 +1,134 @@
+.content {
+    margin-left: 60px;
+    padding: 20px;
+    background-color: #F9F9F9;
+    height: 100vh;
+    transition: 0.3s;
+    &.sidebarExpanded {
+      margin-left: 250px;
+    }
+    
+ 
+    h4 {
+        font-size: 18px;   /* Adjust font size as needed */
+        text-align: right; /* Aligns text to the right */
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255,255,255,0.7);
+        z-index: 9998;
+        backdrop-filter: blur(5px);
+    
+        .simple-loader {
+            border: 16px solid #f3f3f3; // increase the border size
+            border-top: 16px solid #3498db;
+            border-radius: 50%;
+            width: 120px;  // increase the width
+            height: 120px; // increase the height
+            animation: spin 2s linear infinite;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;  // ensure loader is above the overlay
+        }
+
+        .progress-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: #333;
+        }
+
+    }
+    
+  
+    @keyframes spin {
+        0% { transform: translate(-50%, -50%) rotate(0deg); }
+        100% { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+    
+    
+
+    .header{
+        // background-color: #fff;
+        // border-radius: 20px;
+        padding: 10px;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+
+        input{
+            background-color: #fff;
+            margin: 0px !important;
+            height: 40px;
+        }
+        .header-right{
+            text-align: right;
+
+            .userprofilename{
+                text-align: left;
+            }
+        }
+    }
+    .innercardbig {
+        border: 1px solid #ccc;
+        margin: 15px;
+        width: 30%;
+        border-radius: 20px;
+        padding: 15px;
+        position: relative;
+
+        .cardtoprighticon{
+            font-size: 30px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+
+            .ri-checkbox-circle-fill{
+                color: #008839;
+            }
+
+            .ri-refresh-fill{
+                color: var(--primaryColor);
+            }
+        }
+
+        img{
+            width: 100px;
+            margin: 10px 10px 10px 0px;
+        }
+
+        .cardinnertitle{
+            h4{
+                font-size: 1.3em;
+            }
+        }
+
+        .cardinnertitlecaption{
+            p{
+                font-size: 14px;
+                margin-bottom: 0px;
+                opacity: 0.8;
+            }
+        }
+
+        .cardinnerbutton{
+            button{
+                margin-top: 20px;
+            }
+        }
+
+
+        
+    }
+  }

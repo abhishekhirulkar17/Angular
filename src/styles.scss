@@ -1,0 +1,74 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* You can add global styles to this file, and also import other style files */
+div, p, span, h1, h2, h3, h4, h5, h6{
+    font-family: poppins;
+}
+
+:root {
+    --white: white;
+    --blackBg: #000000;
+    --placeholder: #8A9394;
+    --error: #FF0F6B;
+    --primaryColor: #FFA602;
+    --secondayColor: #828587;
+    --gradientColorStart: #00985F;
+    --gradientColorEnd: #00D498;
+    --cardBg: #2E2E2E;
+    --background_color_1: transparent;
+}
+
+input{
+    width: 100%;
+    border: 0px;
+    border-bottom: 1px solid var(--secondayColor);
+    margin-bottom: 20px !important;
+    height: 50px;
+    font-weight: 400;
+    background-color: transparent;
+}
+
+.primarybtn{
+    width: 100%;
+    background-color: var(--blackBg);
+    color: var(--white);
+    padding: 12px;
+    border: 1px solid var(--blackBg);
+    margin-top: 30px;
+}
+.secondarybtn{
+    width: 100%;
+    background-color: var(--white);
+    color: var(--blackBg);
+    padding: 12px;
+    border: 1px solid var(--secondayColor);
+    margin-top: 30px;
+}
+.highlightbtn{
+    width: 100%;
+    background-color: var(--primaryColor);
+    color: var(--white);
+    padding: 12px;
+    border: 1px solid var(--primaryColor);
+    margin-top: 30px;
+}
+
+.sidemenu-icon{
+    font-size: 1.5em;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+input {
+background: #fff !important;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}

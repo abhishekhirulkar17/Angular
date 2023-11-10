@@ -1,0 +1,67 @@
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4" style="padding-top: 30px;"><img style="margin: 0 auto; width: 60%; text-align: center;" src="assets/img/Logo.png"></div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+  <section id="outerbox">
+      <div class="container main-div">
+          <div class="row">
+              <div class="col-md-7">
+                <img src="assets/img/login.png">
+                <div class="col-md-12 productinfo">
+                  <h4>Automate your ITC Reconciliation</h4>
+                  <ul>
+                    <li>Automatic Daily Reconciliation of Books with GSTR2A & GSTR2B</li>
+                    <li>AI based Matching</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div *ngIf="isLoading" class="overlay">
+                <div class="simple-loader" [style.animation]="isLoading ? 'spin 2s linear infinite' : 'none'"></div>
+                <!-- <div class="progress-text">{{ loadingProgress }}%</div> -->
+             </div>
+             
+              <div class="col-md-5" style="align-items: center;">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h2>Sign In</h2>
+                    <!-- <p>Already have an account ? <a (click)="navigateToSignup()" class="t-link">Sign Up</a> -->
+
+                  </div>
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <!-- Bind username to LoginComponent -->
+                        <input [(ngModel)]="username" type="text" placeholder="username" class="form-feild">
+                      </div>
+                      <div class="col-md-12">
+                        <!-- Bind password to LoginComponent -->
+                        <input [(ngModel)]="password" type="password" placeholder="password" class="form-feild" (keyup.enter)="login()">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="row">
+                  <div class="col-md-6">
+                    <input style="width: 15px; height: 15px; float: left;" type="checkbox"><label style="font-size: 14px; float: left; margin-left: 10px;" for="vehicle1"> Remember Me</label>
+                  </div>
+                  <div class="col-md-6" style="text-align: right;">
+                    <!-- <a (click)="navigateToForgotPassword()" class="t-link">Forgot Password</a> -->
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <!-- Bind login method to LoginComponent -->
+                    <button (click)="login()" class="primarybtn">Login</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> 

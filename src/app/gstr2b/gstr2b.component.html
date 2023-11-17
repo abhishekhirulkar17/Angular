@@ -3,28 +3,16 @@
     <div class="content" [ngClass]="{ 'sidebarExpanded': sidebarExpanded }">
     <router-outlet>
         <div class="container-fulid">
-            <div class="row header">
-                <div class="col-md-8">
+            <div class="row right-header">                
+                <div class="col-md-4">
                     <div class="row">
-                        <div class="col-md-4">
-                            <!-- <input type="text" placeholder="Search here"> -->
+                        <div class="col-md-3">
+                            <button class="back-button" (click)="onBackClick()">Back</button>
+                        </div>
+                        <div class="col-md-9">
+                            <h3 class="title"> GSTR2B</h3>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 header-right">
-                    <div class="col-md-5"></div>
-                    <div class="col-md-7 userprofilename" style="float: right;">
-                        <div class="col-md-4" style="float: left; text-align: right;">
-                            <img src="assets/img/writericon.png" style="height: 50px; margin-right: 10px;">
-                        </div>
-                        <div class="col-md-8" style="float: left; text-align: left;">
-                            <h5 style="margin-bottom: 0px;">CFO Writer</h5>
-                            <span style="opacity:0.3; font-size: 14px; margin-left: 4px;">Admin</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 back-button-container">
-                    <button class="back-button" (click)="onBackClick()">Back</button>
                 </div>
             </div>
             <div class="col-md-6 text-right"> 
@@ -39,14 +27,13 @@
             <!--Content Area Start-->
             <div class="row">
                 <div class="col-md-12">
-                    <h4 class="title">Documents downloaded from GSTN as part of GSTR-2B</h4>
-                    <p class="maintitlecaption">Todownload letest data click on “ Download data from GSTN“<br>
-                        For download of large number of invoices clock on “check status” to know updated status.</p>
+                    <h4 class="title">Documents downloaded from GSTIN Portal as part of GSTR2B</h4>
+                    <p class="maintitlecaption"> Get Final Consolidated GSTR2B From Specified Location</p>
                 </div>
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-3">
-                            <button class="primarybtn" (click)="onDownloadClick()">Get 2B Data<span class="btnicon"></span></button>
+                            <button class="primarybtn" (click)="onDownloadClick()">Get GSTR2B Data<span class="btnicon"></span></button>
                         </div>
                         <!-- <div class="col-md-3">
                            

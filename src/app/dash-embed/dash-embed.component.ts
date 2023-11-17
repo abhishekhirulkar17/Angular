@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./dash-embed.component.scss']
 })
 export class DashEmbedComponent {
-
+  sidebarExpanded: boolean = true;
 }

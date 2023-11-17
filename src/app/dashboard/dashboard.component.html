@@ -29,8 +29,8 @@
                             <img src="assets/img/writericon.png" style="height: 50px; margin-right: 10px;">
                         </div>
                         <div class="col-md-8" style="float: left; text-align: left;">
-                            <h5 style="margin-bottom: 0px;">CFO Writer</h5>
-                            <span style="opacity:0.3; font-size: 14px; margin-left: 4px;">Admin</span>
+                            <h5 style= "margin-top: 13px;" >Admin</h5>
+                            <!-- <span style="opacity:0.3; font-size: 14px; margin-left: 4px;">Admin</span> -->
                         </div>
 
                         
@@ -50,7 +50,8 @@
         <h3 class="title">Get GST Data</h3>
     </div>
     <div class="col-md-6 text-right">
-        <h4>GST Reconciliation : {{ getCurrentMonth() }} 2023</h4>
+        <!-- <h4>GST Reconciliation : {{ getCurrentMonth() }} 2023</h4> -->
+        <h4>GST Reconciliation : September 2023</h4>
     </div>
     
 </div>
@@ -67,16 +68,16 @@
                                     <img class="icon" src="assets/img/gsticon.png">
                                 </div>
                                 <div class="col-md-12 cardinnertitle">
-                                    <h3>2B Downloaded</h3>
+                                    <h3>GSTR 2B</h3>
                                 </div>
                                 <div class="col-md-12 cardinnertitlecaption">
-                                    <p>Documents downloaded from GSTN as part of GSTR-2B</p>
+                                    <p>Get GSTR2B Data From GSTIN Portal</p>
                                 </div>
                                 <div class="col-md-12 cardinnerbutton">
                                     <!-- <button class="primarybtn" (click)="load('/gstr2b')">Download 2B From GSTN</button> -->
                                    
                                     
-                                    <button class="primarybtn" (click)="Clickdownload2B()">Download 2B From GSTN</button>
+                                    <button class="primarybtn" (click)="Clickdownload2B()">Start</button>
                                 </div>
                             </div>
                         </div>
@@ -95,7 +96,7 @@
                                 <div class="col-md-12 cardinnerbutton">
 
                                     <!-- <button class="primarybtn" (click)="load('/gstrpr')">Import Purchase Docs</button> -->
-                                    <button class="primarybtn" (click)="onButtonClick()">Import Purchase Docs</button>
+                                    <button class="primarybtn" (click)="onButtonClick()">Start</button>
                                 </div>
                             </div>
                         </div>
@@ -109,10 +110,7 @@
                                     <h3>Data Summary</h3>
                                 </div>
                                 <div class="col-md-12 cardinnertitlecaption">
-                                    <div class="row">
-                                        <div class="col-md-6"><p>2B Downloaded - <span>2760</span></p></div>
-                                        <div class="col-md-6"><p>My Purchases - <span>2760</span></p></div>
-                                    </div>
+                                    <p>Start Reconciliation Process </p>
                                 </div>
                                 <div class="col-md-12 cardinnerbutton">
                                     <button class="highlightbtn" (click)="ClickstartReconciliation()">Start Reconciliation</button>

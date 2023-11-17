@@ -26,7 +26,8 @@ import { LoadingComponent } from './loading';
 import { DashEmbedComponent } from './dash-embed/dash-embed.component';
 import { TabPageComponent } from './tab-page/tab-page.component'
 import { MatIconModule } from '@angular/material/icon';
-
+import { LogsComponent } from './logs/logs.component';
+  
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { MatIconModule } from '@angular/material/icon';
     LoadingComponent,
     DashEmbedComponent,
     TabPageComponent,
+    LogsComponent,
      // <-- You missed this one in the declarations array
   ],
   imports: [

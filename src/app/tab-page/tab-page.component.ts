@@ -178,6 +178,23 @@ showGraphs() {
   this.router.navigate(['/dash-embed']);
 }
 
-
-
+sendEmail() {
+  this.http.get('https://localhost:7230/api/SendEmails/SendDefaulterMail', { responseType: 'text' }).subscribe(
+    (data) => {
+      if (data.includes('Emails sent')) {
+        alert('Email sent successfully');
+      } else {
+        console.log('Non-JSON response:', data);
+        // Handle other types of responses if needed
+      }
+    },
+    (error) => {
+      console.error('API Error:', error);
+      // Handle errors
+    }
+  );
 }
+
+  
+}
+

@@ -2,28 +2,16 @@
     <div class="content" [ngClass]="{ 'sidebarExpanded': sidebarExpanded }">
     <router-outlet>
         <div class="container-fulid">
-            <div class="row header">
-                <div class="col-md-8">
+            <div class="row right-header">                
+                <div class="col-md-4">
                     <div class="row">
-                        <div class="col-md-4">
-                            <!-- <input type="text" placeholder="Search here"> -->
+                        <div class="col-md-3">
+                            <button class="back-button" (click)="onBackClickPR()">Back</button>
+                        </div>
+                        <div class="col-md-9">
+                            <h3 class="title">Purchase Register</h3>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 header-right">
-                    <div class="col-md-5"></div>
-                    <div class="col-md-7 userprofilename" style="float: right;">
-                        <div class="col-md-4" style="float: left; text-align: right;">
-                            <img src="assets/img/writericon.png" style="height: 50px; margin-right: 10px;">
-                        </div>
-                        <div class="col-md-8" style="float: left; text-align: left;">
-                            <h5 style="margin-bottom: 0px;">CFO Writer</h5>
-                            <span style="opacity:0.3; font-size: 14px; margin-left: 4px;">Admin</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 back-button-container">
-                    <button class="back-button" (click)="onBackClickPR()">Back</button>
                 </div>
             </div>
 
@@ -35,9 +23,8 @@
             <!--Content Area Start-->
             <div class="row">
                 <div class="col-md-12">
-                    <h4 class="title">Import Purchase documents</h4>
-                    <p class="maintitlecaption">Todownload letest data click on “ Download data from GSTN“<br>
-                        For download of large number of invoices clock on “check status” to know updated status.</p>
+                    <h4 class="title">Import PR Data</h4>
+                    <p class="maintitlecaption"> Get Final Consolidated PR Data From Specified Location</p>
                 </div>
                 <!-- <div class="col-md-12">
                     <div class="row">

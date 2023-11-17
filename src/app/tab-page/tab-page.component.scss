@@ -1,37 +1,20 @@
+.content {
+  margin-left: 60px;
+  padding: 20px;
+  background-color: #F9F9F9;
+  height: 100vh;
+  transition: 0.3s;
+  &.sidebarExpanded {
+    margin-left: 250px;
+  }
+}
+
 .button-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.back-button   {
-  width: 5%; /* Adjust the width as needed */
-  background-color: var(--blackBg);
-  color: var(--white);
-  padding: 5px;
-  border: 1px solid var(--blackBg);
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-.back-button:hover {
-  background-color: #e0e0e0;
-}
-.graphs-button:hover {
-background-color: #e0e0e0;
-}
-.graphs-button {
-  width: 5%; /* Adjust the width as needed */
-  background-color: #FFA602;
-  color: var(--blackBg  );
-  padding: 5px;
-  border: 1px solid var(--blackBg);
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
 .scrollable-grid {
   height: 699px; /* Adjust the height as needed */
   overflow: auto;
@@ -122,4 +105,96 @@ mat-tab-group {
 /* Tab content styles */
 .mat-tab-body-content {
   padding: 20px;                    // Content padding
+}
+
+.font-color{
+  color: white;
+}
+
+.tab-bgcolor{
+  background-color: black;
+}
+
+.back-button {
+  padding: 8px 15px;
+  background-color: #080808;
+  color: #fdfcfc;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  // margin-right:2000px;
+}
+
+.graphs-button{
+
+}
+
+.graphs-button {
+  background-color: #FFA602;
+  padding: 8px 15px;
+  color: #fdfcfc;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  float: right;
+}
+.right-header{
+  margin-bottom: 20px;
+}
+
+mat-tab-group{
+  background-color: #fff !important;
+  font-family: "poppins" !important;
+}
+
+
+::ng-deep .mat-mdc-tab{
+  // background-color: #FFA602 !important;
+  flex-grow: unset !important;
+
+  .columnheader{
+    text-transform: uppercase !important;
+  }
+}
+::ng-deep .mdc-tab-indicator--active{
+  background-color: #000 !important;
+  border-radius: 5px;
+  .mdc-tab__text-label{
+    color: #fff !important;
+  }
+}
+
+::ng-deep{
+  .scrollable-grid{
+    border: 0px !important;
+    padding: 10px !important;
+  }
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
 }

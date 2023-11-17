@@ -3,5 +3,24 @@
 iframe {
   border: none; /* Remove iframe border */
   width: 100%; /* Make iframe responsive to its container */
-  height: 100%; /* Set iframe height to 100% to fit its container */
+  height: 100vh; /* Set iframe height to 100% to fit its container */
+}
+
+
+
+.content {
+  margin-left: 60px;
+  padding: 20px;
+  background-color: #F9F9F9;
+  height: 100vh;
+  transition: 0.3s;
+  &.sidebarExpanded {
+    margin-left: 250px;
+  }
+}
+
+._dash-app-content{
+  div:nth-child(1){
+    float: left;
+  }
 }
